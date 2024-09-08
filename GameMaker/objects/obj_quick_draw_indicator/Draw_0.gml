@@ -5,9 +5,11 @@ var _game_logic = instance_find(obj_quick_draw_game_logic, 0);
 
 if (_game_logic != noone)
 {
-	if (_game_logic.game_state != _game_logic.game_states.fire)
+	if (_game_logic.state != _game_logic.states.fire
+	&& _game_logic.state != _game_logic.states.foul
+	&& _game_logic.state != _game_logic.states.firing)
 	{
-		if (_game_logic.game_state != _game_logic.game_states.get_ready
+		if (_game_logic.state != _game_logic.states.get_ready
 		|| flash_time < half_max_flash_time
 		)
 		{
@@ -16,6 +18,10 @@ if (_game_logic != noone)
 			draw_text(x + sprite_width + string_width(string(" ")) + 7, y, string(_game_logic.level));
 			draw_set_font(-1);
 		}
+	}
+	else if (_game_logic.state == _game_logic.states.foul)
+	{
+		draw_sprite(spr_quick_draw_indicator_foul, 0, x, y);
 	}
 	else
 	{

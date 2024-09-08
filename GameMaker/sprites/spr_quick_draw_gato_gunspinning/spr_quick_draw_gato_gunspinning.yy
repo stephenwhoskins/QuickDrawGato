@@ -26,7 +26,7 @@
   ],
   "name":"spr_quick_draw_gato_gunspinning",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"gato",
     "path":"folders/Sprites/mini_games/quick_draw/gato.yy",
@@ -87,7 +87,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":13,
+    "xorigin":8,
     "yorigin":14,
   },
   "swatchColours":null,

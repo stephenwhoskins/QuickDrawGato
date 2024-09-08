@@ -3,24 +3,33 @@
 
 if (level == 4) return;
 
-if (state_time_microsecs >= max_state_time_microsecs)
+if (state_time >= max_state_time)
 {
-	switch (game_state)
+	switch (state)
 	{
-		case game_states.start:
+		case states.start:
 		{
-			game_state = game_states.get_ready;
+			state = states.get_ready;
 			break;
 		}
-		case game_states.get_ready:
+		case states.get_ready:
 		{
-			game_state = game_states.fire;
+			state = states.fire;
 			break;
 		}
-		case game_states.fire:
+		case states.fire:
 		{
-			game_state = game_states.start;
-			level++;
+			increase_level();
+			break;
+		}
+		case states.foul:
+		{
+			increase_level();
+			break;
+		}
+		case states.firing:
+		{
+			increase_level();
 			break;
 		}
 	}
@@ -29,22 +38,55 @@ if (state_time_microsecs >= max_state_time_microsecs)
 	{
 		case 1:
 		{
-			max_state_time_microsecs = game_state.level_1;
+			max_state_time = state.level_1;
 			break;
 		}
 		case 2:
 		{
-			max_state_time_microsecs = game_state.level_2;
+			max_state_time = state.level_2;
 			break;
 		}
 		case 3:
 		{
-			max_state_time_microsecs = game_state.level_3;
+			max_state_time = state.level_3;
 			break;
 		}
 	}
 	
-	state_time_microsecs = 0;
+	state_time = 0;
 }
 
-state_time_microsecs = min(state_time_microsecs + delta_time, max_state_time_microsecs);
+if (keyboard_check(vk_space) && !action_pressed)
+{
+	if (state != states.foul && state != states.firing)
+	{
+		switch (state)
+		{
+			case states.start:
+			{
+				state = states.foul;
+				break;
+			}
+			case states.get_ready:
+			{
+				state = states.foul;
+				break;
+			}
+			case states.fire:
+			{
+				state = states.firing;
+				break;
+			}
+		}
+	
+		state_time = 0;
+	}
+	
+	action_pressed = true;
+}
+else if (!keyboard_check(vk_space) && action_pressed)
+{
+	action_pressed = false;
+}
+
+state_time = min(state_time + delta_time, max_state_time);
