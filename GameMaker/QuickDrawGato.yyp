@@ -45,9 +45,11 @@
     {"id":{"name":"obj_quick_draw_gato","path":"objects/obj_quick_draw_gato/obj_quick_draw_gato.yy",},},
     {"id":{"name":"obj_quick_draw_indicator","path":"objects/obj_quick_draw_indicator/obj_quick_draw_indicator.yy",},},
     {"id":{"name":"obj_quick_draw_instructions_logic","path":"objects/obj_quick_draw_instructions_logic/obj_quick_draw_instructions_logic.yy",},},
+    {"id":{"name":"obj_quick_draw_score_logic","path":"objects/obj_quick_draw_score_logic/obj_quick_draw_score_logic.yy",},},
     {"id":{"name":"obj_transition_fade_in","path":"objects/obj_transition_fade_in/obj_transition_fade_in.yy",},},
     {"id":{"name":"obj_transition_fade_out","path":"objects/obj_transition_fade_out/obj_transition_fade_out.yy",},},
     {"id":{"name":"rm_quick_draw_instructions","path":"rooms/rm_quick_draw_instructions/rm_quick_draw_instructions.yy",},},
+    {"id":{"name":"rm_quick_draw_score","path":"rooms/rm_quick_draw_score/rm_quick_draw_score.yy",},},
     {"id":{"name":"rm_quick_draw","path":"rooms/rm_quick_draw/rm_quick_draw.yy",},},
     {"id":{"name":"script_globals_init","path":"scripts/script_globals_init/script_globals_init.yy",},},
     {"id":{"name":"snd_music_quick_draw","path":"sounds/snd_music_quick_draw/snd_music_quick_draw.yy",},},
@@ -61,6 +63,7 @@
     {"id":{"name":"spr_quick_draw_indicator_foul","path":"sprites/spr_quick_draw_indicator_foul/spr_quick_draw_indicator_foul.yy",},},
     {"id":{"name":"spr_quick_draw_indicator_level","path":"sprites/spr_quick_draw_indicator_level/spr_quick_draw_indicator_level.yy",},},
     {"id":{"name":"spr_quick_draw_instructions","path":"sprites/spr_quick_draw_instructions/spr_quick_draw_instructions.yy",},},
+    {"id":{"name":"spr_quick_draw_score_background","path":"sprites/spr_quick_draw_score_background/spr_quick_draw_score_background.yy",},},
     {"id":{"name":"spr_white","path":"sprites/spr_white/spr_white.yy",},},
   ],
   "resourceType":"GMProject",
@@ -68,6 +71,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_quick_draw_instructions","path":"rooms/rm_quick_draw_instructions/rm_quick_draw_instructions.yy",},},
     {"roomId":{"name":"rm_quick_draw","path":"rooms/rm_quick_draw/rm_quick_draw.yy",},},
+    {"roomId":{"name":"rm_quick_draw_score","path":"rooms/rm_quick_draw_score/rm_quick_draw_score.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

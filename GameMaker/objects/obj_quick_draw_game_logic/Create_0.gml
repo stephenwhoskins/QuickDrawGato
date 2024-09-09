@@ -5,21 +5,21 @@ states =
 {
 	start: 
 	{
-		level_1: 3000000,
-		level_2: 3000000,
-		level_3: 3000000,
+		level_1: 2000000,
+		level_2: 2000000,
+		level_3: 2000000,
 	},
 	get_ready:
 	{
-		level_1: 3000000,
-		level_2: 3000000,
-		level_3: 3000000,
+		level_1: 2000000,
+		level_2: 2000000,
+		level_3: 2000000,
 	},
 	fire:
 	{
-		level_1: 3000000,
-		level_2: 3000000,
-		level_3: 3000000,
+		level_1: 2000000,
+		level_2: 2000000,
+		level_3: 2000000,
 	},
 	foul: 4,
 	firing: 5,
@@ -28,8 +28,15 @@ states =
 function increase_level()
 {
 	state = states.start;
-	level++;
-	audio_play_sound(snd_music_quick_draw, 10, false);
+	if (level < 3) 
+	{
+		level++;
+		audio_play_sound(snd_music_quick_draw, 10, false);
+	}
+	else
+	{
+		obj_transition_fade_out.room_id = rm_quick_draw_score;
+	}
 }
 
 state = states.start;
