@@ -8,29 +8,57 @@ states =
 		level_1: 2000000,
 		level_2: 2000000,
 		level_3: 2000000,
+		level_4: 2000000,
+		level_5: 2000000,
 	},
 	get_ready:
 	{
 		level_1: 2000000,
 		level_2: 2000000,
 		level_3: 2000000,
+		level_4: 2000000,
+		level_5: 2000000,
 	},
 	fire:
 	{
 		level_1: 2000000,
 		level_2: 2000000,
 		level_3: 2000000,
+		level_4: 2000000,
+		level_5: 2000000,
 	},
-	foul: 4,
-	firing: 5,
+	foul:
+	{
+		level_1: 2000000,
+		level_2: 2000000,
+		level_3: 2000000,
+		level_4: 2000000,
+		level_5: 2000000,
+	},
+	firing:
+	{
+		level_1: 2000000,
+		level_2: 2000000,
+		level_3: 2000000,
+		level_4: 2000000,
+		level_5: 2000000,
+	},
 }
 
 function increase_level()
 {
-	state = states.start;
-	if (level < 3) 
+	var _gato = instance_find(obj_quick_draw_gato, 0);
+	if (level > 0 && _gato == noone)
 	{
+		obj_transition_fade_out.room_id = rm_quick_draw_score;
+		return;
+	}
+	
+	if (level < 5) 
+	{
+		state = states.start;
 		level++;
+		instance_create_depth(304, 160, depth, obj_quick_draw_opponent);
 		audio_play_sound(snd_music_quick_draw, 10, false);
 	}
 	else

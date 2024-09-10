@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"gato",
-    "path":"folders/Sprites/mini_games/quick_draw/gato.yy",
+    "path":"folders/Sprites/minigames/quick_draw/gato.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

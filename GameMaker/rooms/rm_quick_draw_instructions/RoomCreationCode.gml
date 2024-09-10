@@ -1,0 +1,1 @@
+global.hits = 0;

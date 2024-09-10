@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"indicator",
-    "path":"folders/Sprites/mini_games/quick_draw/indicator.yy",
+    "path":"folders/Sprites/minigames/quick_draw/indicator.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

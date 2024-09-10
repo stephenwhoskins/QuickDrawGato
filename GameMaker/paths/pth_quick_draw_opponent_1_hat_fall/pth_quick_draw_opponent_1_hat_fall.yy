@@ -1,0 +1,22 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_quick_draw_opponent_1_hat_fall",
+  "closed":false,
+  "kind":0,
+  "name":"pth_quick_draw_opponent_1_hat_fall",
+  "parent":{
+    "name":"quick_draw",
+    "path":"folders/Paths/minigames/quick_draw.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":336.0,"y":120.0,},
+    {"speed":100.0,"x":360.0,"y":128.0,},
+    {"speed":100.0,"x":336.0,"y":128.0,},
+    {"speed":100.0,"x":360.0,"y":144.0,},
+    {"speed":100.0,"x":336.0,"y":160.0,},
+    {"speed":100.0,"x":360.0,"y":168.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

@@ -10,3 +10,4 @@ states =
 }
 
 action_pressed = true;
+hit = false;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (level == 4) return;
+if (level == 6) return;
 
 if (state_time >= max_state_time)
 {
@@ -49,6 +49,16 @@ if (state_time >= max_state_time)
 		case 3:
 		{
 			max_state_time = state.level_3;
+			break;
+		}
+		case 4:
+		{
+			max_state_time = state.level_4;
+			break;
+		}
+		case 5:
+		{
+			max_state_time = state.level_5;
 			break;
 		}
 	}

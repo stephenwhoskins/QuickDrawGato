@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_quick_draw_instructions",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_quick_draw_instructions/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

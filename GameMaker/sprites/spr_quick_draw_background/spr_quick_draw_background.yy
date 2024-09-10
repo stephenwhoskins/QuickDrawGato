@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"quick_draw",
-    "path":"folders/Sprites/mini_games/quick_draw.yy",
+    "path":"folders/Sprites/minigames/quick_draw.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
