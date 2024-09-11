@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-path_start(pth_quick_draw_opponent_1_fall, 960.0 / game_get_speed(gamespeed_fps), path_action_stop, false);
+path_start(pth_quick_draw_opponent_1_fall, 720.0 / game_get_speed(gamespeed_fps), path_action_stop, false);
 hit = true;
 global.hits++;
 sprite_index = spr_quick_draw_opponent_1_hit;
