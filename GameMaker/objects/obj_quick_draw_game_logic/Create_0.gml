@@ -48,7 +48,7 @@ states =
 function increase_level()
 {
 	var _gato = instance_find(obj_quick_draw_gato, 0);
-	if (level > 0 && _gato == noone)
+	if ((_gato != noone && _gato.hit && _gato.path_index == -1) || state == states.foul)
 	{
 		obj_transition_fade_out.room_id = rm_quick_draw_score;
 		return;

@@ -1,7 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (hit) return;
+if (hit)
+{
+	if (path_index == -1 && image_speed != 0)
+	{
+		image_speed = 0;
+	}
+	
+	return;
+}
 
 var _game_logic = instance_find(obj_quick_draw_game_logic, 0);
 
